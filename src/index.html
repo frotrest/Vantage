@@ -10,15 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="icon" type="image/x-icon" href="./Images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
       <section class="header-top" id="home">
         <div class="container">
-          <div class="header-top__background-wrapper">
+          <div class="header-top__background-wrapper" data-animate="fadeIn">
             <div class="header-top__content">
               <div class="logo--big header-top__logo--big">
                 <a class="logo--big__link" href="#">
@@ -142,86 +142,85 @@
     <main>
       <div class="background-color">
       <section id="first-background">
-        <div class="container description-block">
+        <div class="container description-block" data-animate="fadeInLeft">
           <div class="first-block">
-            <span>about us</span>
-            <h2>It’s our job to make your home feel like it belongs to you</h2>
-            <p id="one-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula, libero vel egestas fringilla, purus sit amet ante vel odio condimentum tortor.</p>
-            <p id="two-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a risus ac mauris cursus tempor at sit amet orci. Suspendisse vel laoreet mauris. Donec sit amet ante vel odio condimentum lobortis in nec ex. Curabitur varius iaculis vehicula. Vestibulum quis venenatis lorem at, suscipit vel mauris purus.</p>
+            <span class="first-block__podtitle">about us</span>
+            <h2 class="first-block__title">It’s our job to make your home feel like it belongs to you</h2>
+            <p class="first-block__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula, libero vel egestas fringilla, purus sit amet ante vel odio condimentum tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a risus ac mauris cursus tempor at sit amet orci. Suspendisse vel laoreet mauris. Donec sit amet ante vel odio condimentum lobortis in nec ex. Curabitur varius iaculis vehicula. Vestibulum quis venenatis lorem at, suscipit vel mauris purus.</p>
           </div>
           <div class="news-block">
             <div class="new-block">
-                <span class="descrip-new">news - Mar 1, 2022</span>
-                <h4 class="title-new">Incidunt eveniet lorem adipisci quod est quaerat</h4>
+                <span class="descrip-new new-block__podtitle">news - Mar 1, 2022</span>
+                <h4 class="title-new new-block__title">Incidunt eveniet lorem adipisci quod est quaerat</h4>
             </div>
             <div class="new-block">
-              <span class="descrip-new">news - Mar 1, 2022</span>
-              <h4 class="title-new">Excepturi nulla lorem quam velit error qui dolor</h4>
+              <span class="new-block__podtitle">news - Mar 1, 2022</span>
+              <h4 class="new-block__title">Excepturi nulla lorem quam velit error qui dolor</h4>
             </div>
           </div>
         </div>
       </section>
       <section id="two-background">
-        <div class="container projects">
+        <div class="container projects" data-animate="fadeInRight">
           <div class="project">
-            <h5>500k</h5>
-            <span>projects</span>
+            <h5 class="project__title">500k</h5>
+            <span class="project__item">projects</span>
           </div>
-          <div class="crapka"></div>
+          <div class="separator-two"></div>
           <div class="project">
-            <h5>575K</h5>
-            <span>sketches</span>
+            <h5 class="project__title">575K</h5>
+            <span class="project__item">sketches</span>
           </div>
-          <div class="crapka"></div>
+          <div class="separator-two"></div>
           <div class="project">
-            <h5>250k</h5>
-            <span>clients</span>
+            <h5 class="project__title">250k</h5>
+            <span class="project__item">clients</span>
           </div>
-          <div class="crapka"></div>
+          <div class="separator-two"></div>
           <div class="project">
-            <h5>365k</h5>
-            <span>likes</span>
+            <h5 class="project__title">365k</h5>
+            <span class="project__item">likes</span>
           </div>
-          <div class="crapka"></div>
+          <div class="separator-two"></div>
           <div class="project">
-            <h5>500k</h5>
-            <span>awards</span>
+            <h5 class="project__title">500k</h5>
+            <span class="project__item">awards</span>
           </div>
         </div>
       </section>
     </div>
       <section id="back">
-        <div class="container back">
+        <div class="container back-content" data-animate="fadeInLeft">
           <div class="homes">
             <div class="home">
-              <img src="./Images/house-living-room.png" alt="house-living-room" class="main-img">
-              <img src="./Images/lines.png" alt="lines" class="lines">
-              <span class="new-home">New</span>
-              <span class="type-home">Interior design</span>
-              <span class="home-name">House Living Room</span>
+              <img src="./img/house-living-room.png" alt="house-living-room" class="home__main-img">
+              <img src="./img/lines.png" alt="lines" class="home__lines">
+              <span class="home__type">New</span>
+              <span class="home__title">Interior design</span>
+              <span class="home__item">House Living Room</span>
             </div>
             <div class="home">
-              <img src="./Images/ocean-view-house.png" alt="ocean-view-house" class="main-img">
-              <img src="./Images/lines.png" alt="lines" class="lines">
-              <span class="new-home">New</span>
-              <span class="type-home">ARCHITECTURE</span>
-              <span class="home-name">Ocean View House</span>
+              <img src="./img/ocean-view-house.png" alt="ocean-view-house" class="home__main-img">
+              <img src="./img/lines.png" alt="lines" class="home__lines">
+              <span class="home__type">New</span>
+              <span class="home__title">ARCHITECTURE</span>
+              <span class="home__item">Ocean View House</span>
             </div>
             <div class="home">
-              <img src="./Images/house-dining-area.png" alt="house-diving-area" class="main-img">
-              <img src="./Images/lines.png" alt="lines" class="lines">
-              <span class="new-home">New</span>
-              <span class="type-home">Interior design</span>
-              <span class="home-name">House Dining Area</span>
+              <img src="./img/house-dining-area.png" alt="house-diving-area" class="home__main-img">
+              <img src="./img/lines.png" alt="lines" class="home__lines">
+              <span class="home__type">New</span>
+              <span class="home__title">Interior design</span>
+              <span class="home__item">House Dining Area</span>
             </div>
           </div>
-          <div class="tochka"></div>
+          <div class="separator"></div>
         </div>
       </section>
       <section>
-        <div class="container services-content">
-          <h6 id="services-podifo">Services</h6>
-          <h2 id="services-info">Architecture is not simply a service, it is also an inspiration</h2>
+        <div class="container services-content" data-animate="fadeInRight">
+          <h6 class="services-content__title">Services</h6>
+          <h2 class="services-content__item">Architecture is not simply a service, it is also an inspiration</h2>
           <div class="services">
             <div class="service">
               <div class="content-service">
@@ -236,11 +235,11 @@
                 </defs>
               </svg>
             <div class="pod-content-service">
-              <span>01/06</span>
-              <h5 class="info-service">Architecture</h5>
+              <span class="pod-content-service__item">01/06</span>
+              <h5 class="pod-content-service__title">Architecture</h5>
             </div>
           </div>
-            <p class="description-service">Excepturi sed impedit mollitia dicta rerum vero aut in vel. Sed dolor enim voluptas.</p>
+            <p class="service__item">Excepturi sed impedit mollitia dicta rerum vero aut in vel. Sed dolor enim voluptas.</p>
             </div>
             <div class="service">
               <div class="content-service">
@@ -255,11 +254,11 @@
                   </defs>
                 </svg>
               <div class="pod-content-service">
-                <span>02/06</span>
-                <h5 class="info-service">Interior Design</h5>
+                <span class="pod-content-service__item">02/06</span>
+                <h5 class="pod-content-service__title">Interior Design</h5>
               </div>
             </div>
-              <p class="description-service">Excepturi sed impedit mollitia dicta rerum vero aut in vel. Sed dolor enim voluptas.</p>
+              <p class="service__item">Excepturi sed impedit mollitia dicta rerum vero aut in vel. Sed dolor enim voluptas.</p>
             </div>
             <div class="service">
               <div class="content-service">
@@ -274,11 +273,11 @@
                   </defs>
                 </svg>
               <div class="pod-content-service">
-                <span>03/06</span>
-                <h5 class="info-service">Master Planing</h5>
+                <span class="pod-content-service__item">03/06</span>
+                <h5 class="pod-content-service__title">Master Planing</h5>
               </div>
             </div>
-              <p class="description-service">Excepturi sed impedit mollitia dicta rerum vero aut in vel. Sed dolor enim voluptas.</p>
+              <p class="service__item">Excepturi sed impedit mollitia dicta rerum vero aut in vel. Sed dolor enim voluptas.</p>
             </div>
             <div class="service">
               <div class="content-service">
@@ -293,11 +292,11 @@
                   </defs>
                 </svg>
               <div class="pod-content-service">
-                <span>04/06</span>
-                <h5 class="info-service">Construction</h5>
+                <span class="pod-content-service__item">04/06</span>
+                <h5 class="pod-content-service__title">Construction</h5>
               </div>
             </div>
-              <p class="description-service">Excepturi sed impedit mollitia dicta rerum vero aut in vel. Sed dolor enim voluptas.</p>
+              <p class="service__item">Excepturi sed impedit mollitia dicta rerum vero aut in vel. Sed dolor enim voluptas.</p>
             </div>
             <div class="service">
               <div class="content-service">
@@ -312,11 +311,11 @@
                   </defs>
                 </svg>
               <div class="pod-content-service">
-                <span>05/06</span>
-                <h5 class="info-service">Energy Audit</h5>
+                <span class="pod-content-service__item">05/06</span>
+                <h5 class="pod-content-service__title">Energy Audit</h5>
               </div>
             </div>
-              <p class="description-service">Excepturi sed impedit mollitia dicta rerum vero aut in vel. Sed dolor enim voluptas.</p>
+              <p class="service__item">Excepturi sed impedit mollitia dicta rerum vero aut in vel. Sed dolor enim voluptas.</p>
             </div>
             <div class="service">
               <div class="content-service">
@@ -331,18 +330,18 @@
                   </defs>
                 </svg>
               <div class="pod-content-service">
-                <span>06/06</span>
-                <h5 class="info-service">Documentation</h5>
+                <span class="pod-content-service__item">06/06</span>
+                <h5 class="pod-content-service__title">Documentation</h5>
               </div>
             </div>
-              <p class="description-service">Excepturi sed impedit mollitia dicta rerum vero aut in vel. Sed dolor enim voluptas.</p>
+              <p class="service__item">Excepturi sed impedit mollitia dicta rerum vero aut in vel. Sed dolor enim voluptas.</p>
             </div>
           </div>
-          <button id="see-service">see all services</button>
+          <button class="services-content__btn">see all services</button>
         </div>
       </section>
       <section id="partners-back">
-        <div class="container partner-content">
+        <div class="container partner-content" data-animate="fadeInLeft">
           <div class="partners">
             <div class="partner">
               <svg xmlns="http://www.w3.org/2000/svg" width="154" height="38" viewBox="0 0 154 38" fill="none">
@@ -356,7 +355,7 @@
                 </defs>
               </svg>
             </div>
-            <div class="crapka"></div>
+            <div class="separator"></div>
             <div class="partner">
               <svg xmlns="http://www.w3.org/2000/svg" width="140" height="38" viewBox="0 0 140 38" fill="none">
                 <g clip-path="url(#clip0_1_273)">
@@ -369,7 +368,7 @@
                 </defs>
               </svg>
             </div>
-            <div class="crapka"></div>
+            <div class="separator"></div>
             <div class="partner">
               <svg xmlns="http://www.w3.org/2000/svg" width="109" height="32" viewBox="0 0 109 32" fill="none">
                 <g clip-path="url(#clip0_1_275)">
@@ -382,7 +381,7 @@
                 </defs>
               </svg>
             </div>
-            <div class="crapka"></div>
+            <div class="separator"></div>
             <div class="partner">
               <svg xmlns="http://www.w3.org/2000/svg" width="142" height="38" viewBox="0 0 142 38" fill="none">
                 <g clip-path="url(#clip0_1_277)">
@@ -395,7 +394,7 @@
                 </defs>
               </svg>
             </div>
-            <div class="crapka"></div>
+            <div class="separator"></div>
             <div class="partner">
               <svg xmlns="http://www.w3.org/2000/svg" width="148" height="38" viewBox="0 0 148 38" fill="none">
                 <g clip-path="url(#clip0_1_279)">
@@ -412,7 +411,7 @@
         </div>
       </section>
       <section id="nav-back">
-        <div class="container nav-block">
+        <div class="container nav-block" data-animate="fadeInRight">
           <svg xmlns="http://www.w3.org/2000/svg" width="131" height="34" viewBox="0 0 131 34" fill="none">
             <g clip-path="url(#clip0_1_289)">
               <path d="M31.2853 30.3572H25.4722L24.6777 34.0001H18.1732L24.4078 9.71436H32.4468L38.6814 34.0001H32.0404L31.2853 30.3572ZM30.2634 25.6792L28.4137 16.9394L26.485 25.6792H30.2634Z" fill="white"/>
@@ -430,37 +429,36 @@
             </defs>
           </svg>
           <nav class="navbar">
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">projects</a></li>
-            <li><a href="#">news</a></li>
-            <li><a href="#">contact</a></li>
-          </ul>
+            <a href="#" class="navbar__item">Home</a>
+            <a href="#" class="navbar__item">about</a>
+            <a href="#" class="navbar__item">services</a>
+            <a href="#" class="navbar__item">projects</a>
+            <a href="#" class="navbar__item">news</a>
+            <a href="#" class="navbar__item">contact</a>
           </nav>
         </div>
       </section>
       <section>
-        <div class="container form-content">
+        <div class="container form-content" data-animate="fadeInLeft">
           <form>
             <label><input type="email" placeholder="Newsletter (Emter Email)" required></label>
-            <button type="submit" id="subsribe">Subscribe</button>
+            <button type="submit" id="subscribe">Subscribe</button>
           </form>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container footer-content">
+    <footer class="footer">
+      <div class="container footer-content" data-animate="fadeInUp">
         <div class="info-footer">
-          <a href="#">licensing</a>
-          <a href="#">Styles</a>
-          <a href="#">Changelog</a>
+          <a href="#" class="info-footer__item">licensing</a>
+          <a href="#" class="info-footer__item">Styles</a>
+          <a href="#" class="info-footer__item">Changelog</a>
         </div>
         <div class="other">
           <p>powerd by</p><a href="https://webflow.com/">webflow.com</a>
         </div>
       </div>
     </footer>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
