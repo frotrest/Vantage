@@ -60,42 +60,6 @@ html {
   width: 100%;
 }
 
-.icon-heart {
-  width: 17px;
-  height: 17px;
-  fill: transparent;
-  transition: fill 0.2s linear;
-}
-
-.header-top__about-project .icon-heart:hover {
-  fill: #e63946;
-}
-
-.header-top__about-project {
-  display: flex;
-  gap: 3px;
-}
-
-.header-top__about-project-link {
-  color: #fff;
-  text-align: center;
-  font-family: var(--main-font);
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 15.3px;
-  /* 153% */
-  transition: color 0.3s linear;
-}
-
-.header-top__about-project-svg-link {
-  height: 17px;
-}
-
-.header-top__about-project-link:hover {
-  color: rgba(255, 255, 255, 0.75);
-}
-
 .navmenu {
   display: flex;
   gap: 37px;
